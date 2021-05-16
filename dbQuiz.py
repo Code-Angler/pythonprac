@@ -11,4 +11,4 @@ for s_m in same_point:
     s_point_m = s_m['title']
     print(s_point_m)
 
-db.movies.update_one({'title':'매트릭스'},{'$set':{'point':'0'}})
+# db.movies.update_one({'title':'매트릭스'},{'$set':{'point':'0'}})
