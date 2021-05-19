@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
+start = time.time()
+
 driver = webdriver.Chrome('C:/Users/seong gyeong/Desktop/SPARTA/pythonprac/chromedriver.exe')
 driver.get("https://shoppinglive.naver.com/home?category=46")
 time.sleep(5) # 5초 동안 페이지 로딩 기다리기(이미지가 자꾸 바뀌는 페이지는 필요)
@@ -22,8 +24,6 @@ for tr in trs:
         print(title, discount_a.text) # 여기서 출력할때는 결과적으로 원하는 값인 .text를 한 값을 출력한다.
 
 
-\
-
-
 driver.quit() # 끝나면 닫아주기
+print("time :", time.time() - start)
 
