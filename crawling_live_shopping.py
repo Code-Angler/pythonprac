@@ -4,7 +4,7 @@ import time
 
 start = time.time()
 
-driver = webdriver.Chrome('C:/Users/seong gyeong/Desktop/SPARTA/pythonprac/chromedriver.exe')
+driver = webdriver.Chrome('C:/Users/molin/AppData/Local/Programs/Python/Python38/chromedriver.exe')
 driver.get("https://shoppinglive.naver.com/home?category=46")
 time.sleep(5) # 5초 동안 페이지 로딩 기다리기(이미지가 자꾸 바뀌는 페이지는 필요)
 req = driver.page_source
